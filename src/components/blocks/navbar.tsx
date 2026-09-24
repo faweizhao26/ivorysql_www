@@ -546,7 +546,7 @@ export const Navbar = () => {
                     href={salesFormUrl(locale, "navbar")}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary hover:text-primary/80 px-2 text-sm font-medium transition-colors"
+                    className="px-2 text-sm font-medium transition-opacity hover:opacity-75"
                   >
                     {t("contactSales")}
                   </Link>
