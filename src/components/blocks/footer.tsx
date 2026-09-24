@@ -1,8 +1,9 @@
 import { ArrowUpRight, Github } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
+import { salesFormUrl } from "@/lib/lead-form";
 
 const docsLinks = [
   { key: "documentation", href: "https://docs.ivorysql.org/" },
@@ -29,6 +30,7 @@ const developerLinks = [
 
 export function Footer() {
   const t = useTranslations("Footer");
+  const locale = useLocale();
 
   return (
     <footer className="flex flex-col items-center gap-14 pt-28 lg:pt-32">
@@ -132,6 +134,17 @@ export function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href={salesFormUrl(locale, "footer")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-0.5 text-sm transition-opacity hover:opacity-75"
+              >
+                {t("communityLinks.contactSales")}
+                <ArrowUpRight className="size-3" />
+              </Link>
+            </li>
           </ul>
         </div>
 

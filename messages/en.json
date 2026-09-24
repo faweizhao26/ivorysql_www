@@ -131,7 +131,8 @@
         "title": "Gitee",
         "description": "Mirror for Chinese developers"
       }
-    }
+    },
+    "contactSales": "Contact Sales"
   },
   "Footer": {
     "ctaTitle": "Start using IvorySQL today",
@@ -153,7 +154,8 @@
     "communityLinks": {
       "mailingLists": "Mailing Lists",
       "discord": "Discord",
-      "twitter": "Twitter"
+      "twitter": "Twitter",
+      "contactSales": "Contact Sales"
     },
     "developerLinks": {
       "github": "GitHub",
@@ -346,7 +348,8 @@
       }
     },
     "ctaQuestion": "Have a specific use case in mind?",
-    "readCustomerStories": "Read customer stories →"
+    "readCustomerStories": "Read customer stories →",
+    "contactSales": "Contact Sales"
   },
   "Capabilities": {
     "heading": "The Complete Enterprise Database",

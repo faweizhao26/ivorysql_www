@@ -14,8 +14,9 @@ import {
   Wallet,
 } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
+import { salesFormUrl } from "@/lib/lead-form";
 import { cn } from "@/lib/utils";
 
 // ─── Industries & scale ────────────────────────────────────────────────────────
@@ -87,6 +88,7 @@ const CHALLENGES_DEF = [
 
 export const BusinessValue = () => {
   const t = useTranslations("BusinessValue");
+  const locale = useLocale();
   const reduce = useReducedMotion();
 
   return (
@@ -250,6 +252,14 @@ export const BusinessValue = () => {
               className="text-primary hover:text-primary/80 text-sm font-medium transition-colors"
             >
               {t("readCustomerStories")}
+            </a>
+            <a
+              href={salesFormUrl(locale, "home")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-4 py-2 text-sm font-medium transition-colors"
+            >
+              {t("contactSales")}
             </a>
           </div>
         </motion.div>

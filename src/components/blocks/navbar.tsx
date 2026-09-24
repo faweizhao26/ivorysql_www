@@ -31,6 +31,8 @@ import {
 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 
+import { salesFormUrl } from "@/lib/lead-form";
+
 import { GitHubStarsButton } from "@/components/github-stars-button";
 import { LanguageSwitch } from "@/components/language-switch";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -538,6 +540,18 @@ export const Navbar = () => {
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link
+                    href={salesFormUrl(locale, "navbar")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:text-primary/80 px-2 text-sm font-medium transition-colors"
+                  >
+                    {t("contactSales")}
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
         </div>
@@ -711,6 +725,7 @@ export const Navbar = () => {
           {[
             { label: t("docs"), href: "https://docs.ivorysql.org/" },
             { label: t("blog"), href: "/blog" },
+            { label: t("contactSales"), href: salesFormUrl(locale, "mobile-nav") },
           ].map(({ label, href }) => (
             <Link
               key={label}

@@ -131,7 +131,8 @@
         "title": "Gitee",
         "description": "面向中国开发者的镜像仓库"
       }
-    }
+    },
+    "contactSales": "商业咨询"
   },
   "Footer": {
     "ctaTitle": "现在就开始使用 IvorySQL",
@@ -153,7 +154,8 @@
     "communityLinks": {
       "mailingLists": "邮件列表",
       "discord": "Discord",
-      "twitter": "Twitter"
+      "twitter": "Twitter",
+      "contactSales": "商业咨询"
     },
     "developerLinks": {
       "github": "GitHub",
@@ -346,7 +348,8 @@
       }
     },
     "ctaQuestion": "有具体的使用场景想了解吗?",
-    "readCustomerStories": "查看客户故事 →"
+    "readCustomerStories": "查看客户故事 →",
+    "contactSales": "商业咨询"
   },
   "Capabilities": {
     "heading": "完整的企业级数据库",
